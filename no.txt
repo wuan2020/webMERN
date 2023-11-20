@@ -1,0 +1,87 @@
+set terminal to node :
+npm create vite@latest client "folder name client"
+select - react
+select - js + swc
+cd from client
+intall the node js - npm i 
+go to tailwind vite search template
+install reactsysntax - npm install -D tailwindcss postcss autoprefixer
+intal - npx tailwindcss init -p
+then procedd - tailwing.config file chnge the code-
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}------
+just proceed to the steps,
+final run -npm run dev
+we have problem in-
+node version versus npm
+
+---
+
+ok d real thing
+create pages nah
+under src folder create pages with ext. .jsx(home,out)
+next, install the router-dome
+- npm i react-router-dom
+next - set the pages code to the app.jsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import home from './pages/home';
+import signin from './pages/signin';
+import signup from './pages/signup';
+import profile from './pages/profile';
+import about from './pages/about';
+import { Component } from "react"
+
+export default function App() {
+  return <BrowserRouter>
+  <Routes>
+          <Route path="/" element={<home />} />
+          <Route path="/signin" element={<signin />} />
+          <Route path="/signup" element={<signup />} />
+          <Route path="/profile" element={<profile />} />
+          <Route path="/about" element={<about />} />
+          
+  </Routes>
+  </BrowserRouter>;
+  -------- follow the content
+
+  now, you can test by running npm run dev
+
+  -- header in all
+  setup -
+  craete headercomp under SRC/Component
+  <header>
+        <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
+            <span className='text-slate-500'>MSU</span>
+            <span className='text-slate-700'>COM</span>
+        </h1>
+    </header>
+    -----just take a look the layout thing saheader
+    - how tolinkor call all the ready pagesin Component
+    > import { Link } from 'react-router-dom';
+    use > <link to='/'> lang tol! for home asignmnt value. remmber!
+    
+  
+
+create and run server cmd
+create a api folder then write
+npm init -y : outside the cleint foldermongoose
+insidethe Apifolder create a filename
+index.jsthen runnpmi express outside the cleints
+
+create connser
+fron t client side - run isnde client - npmrun dev
+back kserv side - run with wolproj - npmrun dev
+
+now.. instaldb
+npmimongoose then craetacount inmongodb sitefree
+useur gmailaccount
+
