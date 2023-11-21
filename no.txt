@@ -84,4 +84,31 @@ back kserv side - run with wolproj - npmrun dev
 now.. instaldb
 npmimongoose then craetacount inmongodb sitefree
 useur gmailaccount
+databa - jwok-jwMdb@ = special chara isnotallow
+labor1- driverselect - mongodb+srv://jwok:<password>@labor1.9tqhqyl.mongodb.net/?retryWrites=true&w=majority
+after setupimport mongoose from "mongoose";
 
+use envy to hid the class mongodb string
+parameter variable must be declare
+decept = "mongodb+srv:/ /jwok:jwokMdb@2020@labor1.9tqhqyl.mongodb.net/?retryWrites=true&w=majority";
+
+install npm i dotenv
+declare to index.js - import dotenv from 'dotenv';
+
+dotenv.config();
+
+mongoose.connect(process.env.decept).then ( () => {
+    console.log('Patch to Serv');
+}
+
+modify
+mongoose.connect(process.env.decept).then ( () => {
+    console.log('Patch to Serv');
+    }).catch((err) => {
+        console.log(err);
+    })
+  create modelsa table
+  underapi folder
+  crate modelfold
+  named: tao.model.js
+  attr: ngalan,tubag,mail,una,last,bday,year,category,status,gender,idnum,pic,newtu
