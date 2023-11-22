@@ -112,3 +112,26 @@ mongoose.connect(process.env.decept).then ( () => {
   crate modelfold
   named: tao.model.js
   attr: ngalan,tubag,mail,una,last,bday,year,category,status,gender,idnum,pic,newtu
+
+  create api router
+  app.get('/', (req, res));
+  app.get('/', (req, res) => {
+    res.send('Helow World');
+    }
+\\this is not best practice ha!
+);
+we nede to create proxy insted calll3kloc
+we need to create fold Routes
+userroute - is the direct path only of the pages
+next,buildcontrollers under api,controllers and sub
+// simplified code 2nd round
+//router.get('/test', (req,res) => {
+ //   res.json({
+ //       message: 'hi',
+ //   });
+ // }
+ //);
+// simplified code 2nd round
+
+router.get('/test', test);
+
